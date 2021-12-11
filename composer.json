@@ -1,0 +1,54 @@
+{
+    "name": "mj4444/yii-active-record",
+    "type": "library",
+    "description": "Active Record (For Yii)",
+    "keywords": [
+        "yii",
+        "active-record",
+        "doctrine"
+    ],
+    "homepage": "https://github.com/mj4444ru/yii-active-record",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/mj4444ru/yii-active-record/issues?state=open",
+        "source": "https://github.com/mj4444ru/yii-active-record"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.1",
+        "mj4444/yii-dbal": "^1.0-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yii\\ActiveRecord\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Yii\\ActiveRecord\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        },
+        "config-plugin-options": {
+            "source-directory": "config"
+        },
+        "config-plugin": {
+            "params": "params.php",
+            "common": "common.php",
+            "console": "console.php",
+            "events-console": "events-console.php",
+            "events-web": "events-web.php"
+        }
+    },
+    "scripts": {
+        "test": "phpunit --testdox --no-interaction",
+        "test-watch": "phpunit-watcher watch"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
